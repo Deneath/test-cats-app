@@ -1,0 +1,3 @@
+include ':cats'
+include ':app'
+rootProject.name = "TawasalSample"

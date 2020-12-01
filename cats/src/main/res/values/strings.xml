@@ -1,0 +1,12 @@
+<resources>
+    <string name="widget_title">Cats</string>
+    <string name="open_app_button_caption">Open app</string>
+    <string name="retry_button_caption">Retry</string>
+    <string name="error_title">Woops!</string>
+    <string name="list_empty_state_message">No cats yet :(</string>
+    <string name="menu_item_sort">Sort</string>
+    <string name="filters_dialog_title">Filters</string>
+    <string name="reset_button_caption">Reset</string>
+    <string name="apply_button_caption">Apply</string>
+    <string name="close_button">Close</string>
+</resources>

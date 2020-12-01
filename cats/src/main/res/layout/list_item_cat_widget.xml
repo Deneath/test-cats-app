@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:foreground="@drawable/rect_ripple_round_4"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/catPicture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/black" />
+
+    <View
+        android:id="@+id/descriptionGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/catPicture" />
+
+    <View
+        android:id="@+id/contentBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rect_round_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/catPicture"
+        app:layout_constraintStart_toStartOf="@+id/catPicture"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionGuideline" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@+id/contentBackground"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/contentBackground"
+        app:layout_constraintTop_toTopOf="@+id/contentBackground"
+        tools:text="LeonLeonLeonLeonLeonLeonLeonLeon" />
+
+    <TextView
+        android:id="@+id/breed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@+id/contentBackground"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/contentBackground"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Scottish foldScottish foldScottish foldScottish fold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/contentBackground"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/contentBackground"
+        app:layout_constraintTop_toBottomOf="@+id/breed"
+        tools:text="Scottish foldScottish foldScottish foldScottish foldScottish foldScottish foldScottish foldScottish foldScottish foldScottish foldScottish foldScottish fold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
